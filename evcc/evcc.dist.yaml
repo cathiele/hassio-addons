@@ -13,13 +13,11 @@ levels:
 # for examples see https://github.com/andig/evcc-config#meters
 meters:
 - name: grid
-  type: modbus
-  model: sdm # SDM630
-  uri: rs485.fritz.box:23
-  rtu: true # rs485 device connected using ethernet adapter
-  id: 2
-  power: Power # default value, optionally override
-  energy: Sum # default value, optionally override
+  type: default
+  power:
+    type: script # use script plugin
+    cmd: /bin/sh -c "echo 0" # actual command
+    timeout: 3s # kill script after 3 seconds
 - name: pv
   type: default
   power:
