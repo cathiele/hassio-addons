@@ -9,7 +9,7 @@ WORKDIR /evcc
 
 #RUN pip3 install json2yaml
 
-#COPY scripts/run.sh /evcc
+COPY scripts/run.sh /evcc
 
 COPY evcc.dist.yaml /etc
 
