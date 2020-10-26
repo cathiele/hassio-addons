@@ -150,7 +150,7 @@
           "services": null
         }
       },
-    "schema": {},
+    "schema": false,
     "host_network": true,
     "webui": "http://[HOST]:[PORT:7070]/",
     "ports": {
