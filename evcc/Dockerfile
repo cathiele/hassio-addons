@@ -11,6 +11,6 @@ WORKDIR /evcc
 
 COPY scripts/run.sh /evcc
 
-COPY evcc.dist.yaml /etc
+COPY evcc.dist.yaml /etc/evcc.yaml
 
 ENTRYPOINT [ "/evcc/run.sh" ]
