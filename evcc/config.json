@@ -15,6 +15,7 @@
     "options": {},
     "schema": false,
     "host_network": true,
+    "map": ["config:rw"],
     "webui": "http://[HOST]:[PORT:7070]/",
     "ports": {
       "7090/udp": 7090,

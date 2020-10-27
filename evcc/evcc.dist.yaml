@@ -40,10 +40,22 @@ meters:
 # name can be freely chosen and is used as reference when assigning charger to vehicle
 # for examples see https://github.com/andig/evcc-config#chargers
 chargers:
-- name: wallbe
-  type: wallbe # Wallbe charger
-  uri: 192.168.0.8:502 # ModBus address
-# vehicle definitions
+- name: democharger
+  type: default 
+  status: # charger status A..F
+    type: script
+    cmd: /bin/sh -c "echo 'A'"
+  enabled: # charger enabled state (true/false or 0/1)
+    type: script
+    cmd: /bin/sh -c "echo 0"
+  enable: # set charger enabled state
+    type: script
+    cmd: /bin/sh -c "echo 0"
+  maxcurrent: # set charger max current
+    type: script
+    cmd: /bin/sh -c "echo 0"
+
+  # vehicle definitions
 # name can be freely chosen and is used as reference when assigning vehicle to loadpoint
 # for examples see https://github.com/andig/evcc-config#vehicles
 vehicles:
@@ -68,7 +80,7 @@ site:
 # loadpoint describes the charger, charge meter and connected vehicle
 loadpoints:
 - title: Garage # display name for UI
-  charger: wallbe # charger
+  charger: democharger # charger
   meters:
     charge: charge # charge meter
   vehicle: renault
