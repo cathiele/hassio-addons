@@ -1,6 +1,6 @@
 {
     "name": "evcc",
-    "version": "LATEST",
+    "version": "latest",
     "slug": "evcc",
     "description": "EV Charge Controller!",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
