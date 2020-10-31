@@ -1,28 +1,20 @@
-# Home Assistant Community Add-on: Grafana
+# Home Assistant Community Add-on: [evcc](https://github.com/andig/evcc)
 
-The analytics platform for all your metrics.
-
-Grafana allows you to query, visualize, alert on and understand your metrics
-no matter where they are stored. Create, explore, and share dashboards. Learn
-about your Home Automation system using sexy and compelling graphs, and other
-data visualizations.
-
-Combine this add-on with the InfluxDB add-on to get insanely powerful
-insights to your home.
+EVCC is an extensible EV Charge Controller with PV integration implemented in Go.
 
 ## Installation
 
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Home Assistant add-on.
 
-1. Search for the "Grafana" add-on in the Supervisor add-on store.
-1. Install the "Grafana" add-on.
-1. Start the "Grafana" add-on.
-1. Check the logs of the "Grafana" to see if everything went well.
+1. Add a new add-on repository in the menu and point it to https://github.com/cathiele/hassio-addons
+1. Search for the "evcc" add-on in the Supervisor add-on store.
+1. Install the "evcc" add-on.
+1. Add your evcc configuration file to /config/evcc.yaml
+1. Start the "evcc" add-on.
+1. Check the logs of the "evcc" to see if everything went well.
 1. Open the Web UI.
 
-**Note**: As the addon now supports both Ingress and direct access, the default
-`admin` user has a password of `hassio`.  __Please ensure to change this.__
 
 ## Configuration
 
@@ -38,16 +30,7 @@ You can find documentation about the configuration format and sample configurati
 
 Got questions?
 
-You have several options to get them answered:
-
-- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
-  support and feature requests.
-- The [Home Assistant Discord chat server][discord-ha] for general Home
-  Assistant discussions and questions.
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
-
-You could also [open an issue here][issue] GitHub.
+Please open [open an issue here][issue] GitHub.
 
 ## Authors & contributors
 
