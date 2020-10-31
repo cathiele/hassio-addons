@@ -1,5 +1,5 @@
 
-FROM andig/evcc:latest
+FROM andig/evcc:0.30
 
 RUN \
     set -o pipefail \
