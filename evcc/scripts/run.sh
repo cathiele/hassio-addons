@@ -2,6 +2,7 @@
 
 echo "evcc addon Startup script run.sh"
 
+cat /data/options.json
 CONFIG=$(jq .config_file /data/options.json)
 
 echo "Using config ${CONFIG}"
