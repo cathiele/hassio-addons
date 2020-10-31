@@ -5,7 +5,7 @@
     "description": "EV Charge Controller!",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "application",
-    "panel_icon": "mdi:docker",
+    "panel_icon": "mdi:electric_car",
     "boot": "auto",
     "legacy": true,
     "stage": "experimental",
