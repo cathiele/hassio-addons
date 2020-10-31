@@ -30,7 +30,7 @@ You can find documentation about the configuration format and sample configurati
 
 Got questions?
 
-Please open [open an issue here][issue] GitHub.
+Please [open an issue](https://github.com/cathiele/hassio-addons/issues) in Github
 
 ## Authors & contributors
 
