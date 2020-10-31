@@ -60,13 +60,12 @@ chargers:
 # for examples see https://github.com/andig/evcc-config#vehicles
 vehicles:
 - name: renault
-  type: renault
-  title: Zoe
-  capacity: 60 # kWh
-  user: # user
-  password: # password
-  vin: WREN...
-  cache: 5m
+  type: default
+  charge:
+    type: script # use script
+    cmd: /bin/sh -c "echo 0" # actual command
+    timeout: 3s # kill script after 3 seconds
+
 
 # site describes the EVU connection, PV and home battery
 site:
