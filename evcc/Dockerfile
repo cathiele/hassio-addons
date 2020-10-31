@@ -4,7 +4,7 @@ FROM andig/evcc:0.30
 RUN \
     set -o pipefail \
     && apk add --no-cache \
-        jq=1.6-r1
+        jq
 
 WORKDIR /evcc
 
