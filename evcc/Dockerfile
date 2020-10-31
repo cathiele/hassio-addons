@@ -2,7 +2,12 @@
 FROM andig/evcc:latest
 
 RUN \
-    curl -J -L -o /tmp/bashio.tar.gz \
+    apk add --no-cache \
+        bash=5.0.17-r0 \
+        curl=7.69.1-r1 \
+        jq=1.6-r1 \
+        tzdata=2020c-r0 \
+    && curl -J -L -o /tmp/bashio.tar.gz \
         "https://github.com/hassio-addons/bashio/archive/v0.9.0.tar.gz" \
     && mkdir /tmp/bashio \
     && tar zxvf \
