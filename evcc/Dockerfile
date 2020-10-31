@@ -10,4 +10,4 @@ WORKDIR /evcc
 
 COPY scripts/run.sh evcc.dist.yaml /evcc/
 
-CMD [ "/evcc/run.sh" ]
+ENTRYPOINT [ "/evcc/run.sh" ]
