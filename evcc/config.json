@@ -13,16 +13,16 @@
     "ingress": true,
     "ingress_port": 7070,
     "init": false,
-    "options": {},
-    "schema": false,
+    "options": {
+        "config_file": "/config/evcc.yaml"
+    },
+    "schema":  {
+        "config_file": "str"
+    },
     "host_network": true,
     "map": ["config:rw"],
     "webui": "http://[HOST]:[PORT:7070]/",
     "ports": {
       "7090/udp": 7090,
       "9522/udp": 9522
-    },
-    "options": {
-        "config_file": "/config/evcc.yaml"
-    }
   }
