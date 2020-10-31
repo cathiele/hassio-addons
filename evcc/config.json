@@ -3,9 +3,10 @@
     "version": "latest",
     "slug": "evcc",
     "description": "EV Charge Controller!",
+    "url": "https://github.com/cathiele/hassio-addons",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "application",
-    "panel_icon": "mdi:electric_car",
+    "panel_icon": "mdi:ev-station",
     "boot": "auto",
     "legacy": true,
     "stage": "experimental",
@@ -20,5 +21,8 @@
     "ports": {
       "7090/udp": 7090,
       "9522/udp": 9522
+    },
+    "options": {
+        "config_file": "/config/evcc.yaml"
     }
   }
